@@ -27,10 +27,10 @@ const ProductTable = ({ products, handleEditProduct, handleDeleteProduct }) => {
           {products.map((product) => (
             <TableRow
               key={product.id}
-              className="bg-white dark:border-gray-700 dark:bg-gray-800"
+              className="bg-white border-gray-200 dark:border-gray-700 dark:bg-gray-800"
             >
               <TableCell>{product.id}</TableCell>
-              <TableCell className="font-medium text-gray-900 dark:text-white">
+              <TableCell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
                 {product.name}
               </TableCell>
               <TableCell>

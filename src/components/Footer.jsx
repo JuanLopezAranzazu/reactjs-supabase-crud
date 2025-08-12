@@ -7,7 +7,10 @@ import {
 
 const AppFooter = () => {
   return (
-    <Footer container className="rounded-none">
+    <Footer
+      container
+      className="rounded-none border-t border-gray-200 dark:border-gray-700"
+    >
       <div className="w-full text-center">
         <FooterCopyright
           href="/"

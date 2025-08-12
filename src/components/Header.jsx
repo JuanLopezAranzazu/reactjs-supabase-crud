@@ -8,7 +8,7 @@ import {
 
 const Header = () => {
   return (
-    <Navbar>
+    <Navbar className="border-b border-gray-200 dark:border-gray-700">
       <NavbarBrand href="/">
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
           My App

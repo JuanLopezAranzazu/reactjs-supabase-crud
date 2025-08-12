@@ -172,12 +172,12 @@ const ProductForm = ({ initialData = null, onSubmit }) => {
       </div>
 
       <div className="flex gap-3 mt-4">
-        <Button color="gray" type="button" onClick={() => navigate(-1)}>
-          Volver
-        </Button>
-        <Button color="blue" type="submit" disabled={loading}>
+        <Button type="submit" disabled={loading}>
           {loading && <Spinner size="sm" className="mr-2" />}
           {initialData ? "Actualizar" : "Crear"}
+        </Button>
+        <Button color="alternative" type="button" onClick={() => navigate(-1)}>
+          Volver
         </Button>
       </div>
     </form>
