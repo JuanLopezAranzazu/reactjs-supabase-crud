@@ -6,7 +6,7 @@ import {
   NavbarToggle,
 } from "flowbite-react";
 
-const Header = () => {
+const AppHeader = () => {
   return (
     <Navbar className="border-b border-gray-200 dark:border-gray-700">
       <NavbarBrand href="/">
@@ -27,4 +27,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default AppHeader;

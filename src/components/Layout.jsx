@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import Header from "./Header";
-import Footer from "./Footer";
+import AppHeader from "./AppHeader";
+import AppFooter from "./AppFooter";
 
 const Layout = () => {
   return (
@@ -10,11 +10,11 @@ const Layout = () => {
       bg-white dark:bg-gray-900 
       text-gray-900 dark:text-white"
     >
-      <Header />
+      <AppHeader />
       <main className="flex-1 container mx-auto p-4">
         <Outlet />
       </main>
-      <Footer />
+      <AppFooter />
     </div>
   );
 };

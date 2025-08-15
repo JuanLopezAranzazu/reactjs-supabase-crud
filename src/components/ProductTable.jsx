@@ -7,6 +7,7 @@ import {
   TableRow,
   Button,
 } from "flowbite-react";
+import { Formatter } from "../utils/formatter";
 
 const ProductTable = ({ products, handleEditProduct, handleDeleteProduct }) => {
   return (
@@ -19,6 +20,7 @@ const ProductTable = ({ products, handleEditProduct, handleDeleteProduct }) => {
             <TableHeadCell>Descripción</TableHeadCell>
             <TableHeadCell>Precio</TableHeadCell>
             <TableHeadCell>Stock</TableHeadCell>
+            <TableHeadCell>Fecha de Creación</TableHeadCell>
             <TableHeadCell>Acciones</TableHeadCell>
           </TableRow>
         </TableHead>
@@ -40,6 +42,7 @@ const ProductTable = ({ products, handleEditProduct, handleDeleteProduct }) => {
               </TableCell>
               <TableCell>${product.price}</TableCell>
               <TableCell>{product.stock}</TableCell>
+              <TableCell>{Formatter.formatDate(product.created_at)}</TableCell>
               <TableCell className="flex space-x-2">
                 <Button
                   size="xs"
